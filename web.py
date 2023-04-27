@@ -9,13 +9,9 @@ todos = functions.get_todo_list()
 
 
 def add_todo():
-    todo = st.session_state['new_todo']
-    todos.append(todo + '\n')
+    tod = st.session_state['new_todo']
+    todos.append(tod + '\n')
     functions.write_todo_list(todos)
-
-
-st.button('Click me')
-
 
 
 for index, todo in enumerate(todos):
